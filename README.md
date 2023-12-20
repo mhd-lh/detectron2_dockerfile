@@ -7,3 +7,6 @@ Make sure you have a version of cmake is installed. You can either run the docke
 After you place the images in `/workspace/detectron2_modified/projects/DensePose/image_in` folder inside docker, run detectron from inside:
 
     python apply_net.py show configs/densepose_rcnn_R_50_FPN_s1x.yaml  model_final_162be9.pkl image_in dp_segm -v
+OR
+  
+    python /workspace/detectron2_modified/projects/DensePose/apply_net.py show /workspace/detectron2_modified/projects/DensePose/configs/densepose_rcnn_R_50_FPN_s1x.yaml  /workspace/detectron2_modified/projects/DensePose/model_final_162be9.pkl /workspace/dataset/image dp_segm -v
